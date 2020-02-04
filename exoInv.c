@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 
-
+/*
 
 struct Objet{
 	float prix;
@@ -26,5 +26,29 @@ int main(){
 		
 		printf("Le cd de %s vaut %f $", cd.nom, cd.prix);
 		return 0;
-	}
-}
+	};
+};
+*/
+
+// Prototype de la fonction d'affichage
+void affiche(float tab[], int tailleTab);
+ 
+int main(int argc, char *argv[])
+{
+    float tab[5] = {2.34, 1.5, 1.89, 1.25};
+ 
+    // On affiche le contenu du tableau
+    affiche(tab, 4);
+ 
+    return 0;
+};
+ 
+void affiche(float tab[], int tailleTab)
+{
+    int i;
+ 
+    for (i = 0 ; i < tailleTab ; i++)
+    {
+        printf("%f\n", tab[i]);
+    };
+};
